@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aron Silva | Software Engineering Intern & Full-Stack Developer</title>
+<meta name="description" content="Explore Aron Silva's portfolio, software engineering skills, web and mobile development projects, and experience building secure full-stack applications.">
+<meta property="og:title" content="Aron Silva | Software Engineering Intern & Full-Stack Developer">
+<meta property="og:description" content="Software engineering skills, web and mobile projects, and secure full-stack applications.">
+<meta property="og:type" content="website">
+<!-- Add after deployment: <link rel="canonical" href="https://YOUR-USERNAME.github.io/REPO/"> -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%236366F1'/%3E%3Ctext x='32' y='42' font-size='28' font-family='Arial' font-weight='700' fill='white' text-anchor='middle'%3EAS%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0B1020;--bg2:#111827;--card:#151D30;--p:#6366F1;--s:#38BDF8;--t:#F8FAFC;--m:#94A3B8;--b:#273449}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:76px}
+body{background:var(--bg);color:var(--t);font:16px/1.7 Inter,system-ui,sans-serif;overflow-x:hidden}
+h1,h2,h3,.logo{font-family:'Space Grotesk',sans-serif;line-height:1.15}
+a{color:inherit;text-decoration:none}
+[hidden]{display:none!important}
+:focus-visible{outline:2px solid var(--s);outline-offset:3px;border-radius:6px}
+.wrap{max-width:1120px;margin:auto;padding:0 20px}
+section{padding:88px 0}
+section:nth-of-type(even){background:var(--bg2)}
+h2{font-size:clamp(1.9rem,4vw,2.6rem);margin-bottom:10px}
+.sub{color:var(--m);margin-bottom:40px;max-width:60ch}
+.grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.card{background:var(--card);border:1px solid var(--b);border-radius:16px;padding:24px;transition:border-color .2s,transform .2s}
+.card:hover{border-color:var(--p);transform:translateY(-3px)}
+.btn{display:inline-flex;align-items:center;min-height:44px;padding:0 22px;border-radius:12px;font-weight:600;border:1px solid var(--b);background:transparent;color:var(--t);cursor:pointer;font-size:.95rem;transition:.2s}
+.btn:hover{border-color:var(--s)}
+.btn.pri{background:linear-gradient(135deg,var(--p),var(--s));border:0}
+.btn.pri:hover{filter:brightness(1.12);box-shadow:0 8px 28px #6366f155}
+.tag{display:inline-block;padding:3px 12px;border:1px solid var(--b);border-radius:99px;font-size:.82rem;color:var(--m);margin:0 6px 8px 0;background:#0b102080}
+/* nav */
+header{position:sticky;top:0;z-index:50;background:#0b1020cc;backdrop-filter:blur(14px);border-bottom:1px solid var(--b)}
+nav{display:flex;align-items:center;justify-content:space-between;height:68px}
+.logo{font-size:1.5rem;font-weight:700}.logo small{display:block;font:400 .7rem Inter;color:var(--m);margin-top:-4px}
+.links{display:flex;gap:26px;align-items:center}
+.links a.l{color:var(--m);font-size:.93rem;padding:6px 0;border-bottom:2px solid transparent}
+.links a.l:hover,.links a.l.on{color:var(--t);border-color:var(--s)}
+#menu{display:none;background:none;border:1px solid var(--b);color:var(--t);width:44px;height:44px;border-radius:10px;font-size:1.3rem;cursor:pointer}
+@media(max-width:900px){#menu{display:block}
+.links{display:none;position:absolute;top:68px;left:0;right:0;flex-direction:column;align-items:stretch;gap:0;background:var(--bg);padding:12px 20px 20px;border-bottom:1px solid var(--b)}
+.links.open{display:flex}.links a.l{padding:12px 0}}
+/* hero */
+#home{position:relative;padding:72px 0 96px;overflow:hidden}
+#home:before{content:"";position:absolute;width:640px;height:640px;right:-120px;top:-140px;background:radial-gradient(circle,#6366f155,transparent 65%);animation:drift 14s ease-in-out infinite alternate}
+@keyframes drift{to{transform:translate(-60px,50px)}}
+.hero{display:grid;gap:48px;grid-template-columns:1.2fr .8fr;align-items:center;position:relative}
+@media(max-width:900px){.hero{grid-template-columns:1fr}}
+.badge{display:inline-flex;gap:8px;align-items:center;padding:6px 14px;border:1px solid var(--b);border-radius:99px;background:var(--card);font-size:.85rem;color:var(--m)}
+.badge i{width:8px;height:8px;border-radius:50%;background:#22c55e;box-shadow:0 0 10px #22c55e}
+h1{font-size:clamp(2.5rem,6vw,4.2rem);margin:22px 0 12px;background:linear-gradient(120deg,#fff 40%,var(--s));-webkit-background-clip:text;background-clip:text;color:transparent}
+.role{font-size:clamp(1.1rem,2.2vw,1.4rem);color:var(--s);font-family:'Space Grotesk';margin-bottom:16px}
+.hero p.d{color:var(--m);max-width:56ch;margin-bottom:12px}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+.photo{position:relative;max-width:380px;margin:auto}
+.photo:before{content:"";position:absolute;inset:-3px;border-radius:26px;background:linear-gradient(135deg,var(--p),var(--s));filter:blur(22px);opacity:.45}
+.photo img{position:relative;display:block;width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 25%;border-radius:24px;border:1px solid var(--b)}
+.term{position:absolute;left:-26px;bottom:-22px;background:#0b1020ee;border:1px solid var(--b);border-radius:12px;padding:10px 14px;font:.78rem/1.5 ui-monospace,Menlo,monospace;color:var(--s)}
+.term span{color:var(--m)}
+@media(max-width:480px){.term{left:8px}}
+.in{opacity:0;transform:translateY(18px);animation:up .7s forwards}
+@keyframes up{to{opacity:1;transform:none}}
+/* sections */
+.about{display:grid;gap:40px;grid-template-columns:1.3fr 1fr}
+@media(max-width:900px){.about{grid-template-columns:1fr}}
+.about p{color:var(--m);margin-bottom:14px}
+.card h3{font-size:1.1rem;margin-bottom:8px}.card p{color:var(--m);font-size:.95rem}
+.about .col{display:grid;gap:14px;align-content:start}
+.proj{display:grid;grid-template-columns:1fr 1fr;gap:0;padding:0;overflow:hidden}
+@media(max-width:800px){.proj{grid-template-columns:1fr}}
+.proj .body{padding:32px}.proj .cat{color:var(--s);font-size:.9rem;margin-bottom:8px}
+.proj h3{font-size:1.7rem;margin-bottom:12px}
+.art{background:linear-gradient(135deg,#1e1b4b,#0c4a6e);display:grid;place-items:center;min-height:260px;padding:20px}
+.art svg{width:100%;max-width:360px}
+.status{display:inline-block;font-size:.8rem;padding:3px 12px;border-radius:99px;background:#f59e0b22;color:#fbbf24;margin-bottom:12px}
+.soon{margin-top:18px;text-align:center;color:var(--m);border-style:dashed}
+.tl{position:relative;padding-left:30px;border-left:2px solid var(--b);display:grid;gap:20px;max-width:760px}
+.tl .card{position:relative}.tl .card:before{content:"";position:absolute;left:-40px;top:28px;width:16px;height:16px;border-radius:50%;background:var(--bg);border:3px solid var(--p)}
+.tl .card.done:before{border-color:#22c55e}
+.tl h3{font-size:1.1rem}.tl small{color:var(--m)}.st{float:right;font-size:.78rem;padding:2px 10px;border-radius:99px;background:#6366f133;margin-left:10px}
+.step b{display:grid;place-items:center;width:38px;height:38px;border-radius:10px;background:linear-gradient(135deg,var(--p),var(--s));margin-bottom:14px;font-family:'Space Grotesk'}
+.note{margin-top:22px;color:var(--m);font-size:.95rem}
+.contact{max-width:680px}
+.info p{color:var(--m);margin-bottom:10px}.info b{color:var(--t)}.info a:not(.btn):hover{color:var(--s)}
+footer{border-top:1px solid var(--b);padding:44px 0 28px;background:var(--bg2)}
+.fg{display:flex;flex-wrap:wrap;gap:28px;justify-content:space-between}
+footer p,footer a{color:var(--m);font-size:.9rem}footer a:hover{color:var(--t)}
+.fl{display:flex;flex-wrap:wrap;gap:18px}
+.copy{margin-top:28px;font-size:.85rem;color:var(--m)}
+/* modal */
+dialog{margin:auto;width:min(760px,92vw);max-height:88vh;background:var(--card);color:var(--t);border:1px solid var(--b);border-radius:20px;padding:30px}
+dialog::backdrop{background:#000a;backdrop-filter:blur(4px)}
+dialog[open]{animation:up .3s}
+dialog h4{margin:20px 0 6px;color:var(--s);font-family:'Space Grotesk'}
+dialog p,dialog li{color:var(--m)}dialog ul{padding-left:20px}
+.x{float:right}
+.rv{opacity:0;transform:translateY(16px);transition:opacity .6s,transform .6s}.rv.show{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}.in,.rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><nav aria-label="Main">
+ <a href="#home" class="logo" aria-label="Aron Silva home">AS.<small>Aron Silva</small></a>
+ <button id="menu" aria-label="Open menu" aria-expanded="false" aria-controls="links">☰</button>
+ <div class="links" id="links">
+  <a class="l" href="#home">Home</a><a class="l" href="#about">About</a><a class="l" href="#skills">Skills</a><a class="l" href="#projects">Projects</a><a class="l" href="#education">Education</a><a class="l" href="#contact">Contact</a>
+  <a class="btn pri cv" href="Aron.pdf" download="Aron-Silva-CV.pdf">Download CV</a>
+ </div></nav></div></header>
+
+<main>
+<section id="home"><div class="wrap hero">
+ <div>
+  <span class="badge in"><i></i>Open to Software Engineering Internship Opportunities</span>
+  <h1 class="in" style="animation-delay:.1s">Hi, I'm Aron Silva.</h1>
+  <p class="role in" style="animation-delay:.2s">Software Engineering Intern & Full-Stack Developer</p>
+  <p class="d in" style="animation-delay:.3s">I'm a Software Engineering student passionate about building secure, practical, and user-focused web and mobile applications. I enjoy turning ideas into functional digital solutions through thoughtful design, clean code, and reliable backend systems.</p>
+  <p class="d in" style="animation-delay:.35s">📍 Colombo, Sri Lanka</p>
+  <div class="cta in" style="animation-delay:.45s">
+   <a class="btn pri" href="#projects">View My Projects</a><a class="btn" href="#contact">Contact Me</a><a class="btn cv" href="Aron.pdf" download="Aron-Silva-CV.pdf">Download My CV</a>
+  </div>
+ </div>
+ <div class="photo in" style="animation-delay:.3s">
+  <img src="profile.jpg" alt="Aron Silva working on a laptop in a café" width="852" height="1193" fetchpriority="high">
+  <div class="term" aria-hidden="true"><span>$</span> whoami<br>aron — full-stack dev<br><span>$</span> status --open-to<br>internship ✓</div>
+ </div>
+</div></section>
+
+<section id="about"><div class="wrap">
+ <h2 class="rv">About Me</h2><p class="sub rv">Building useful technology, one project at a time.</p>
+ <div class="about rv">
+  <div>
+   <p>I'm a Software Engineering graduate-level student who has completed an HND in Software Engineering at ESOFT Metro Campus and is currently pursuing a BSc Software Engineering top-up degree at Kingston University.</p>
+   <p>My interests include full-stack web development, mobile application development, database design, authentication, and application security.</p>
+   <p>Through my final-year Lost &amp; Found Item Management System project, I'm developing practical experience in building connected web and mobile applications, designing backend services, managing data, and implementing secure user access.</p>
+   <p>I'm looking for a Software Engineering Internship where I can contribute to real projects, learn from experienced developers, strengthen my technical abilities, and grow into a capable software engineer.</p>
+  </div>
+  <div class="col">
+   <div class="card"><h3>Full-Stack Development</h3><p>Building connected frontend and backend applications.</p></div>
+   <div class="card"><h3>Web &amp; Mobile Applications</h3><p>Creating accessible, responsive, and practical digital experiences.</p></div>
+   <div class="card"><h3>Security &amp; Data</h3><p>Exploring secure authentication, database design, and responsible data handling.</p></div>
+  </div>
+ </div>
+</div></section>
+
+<section id="skills"><div class="wrap">
+ <h2 class="rv">Technical Skills</h2><p class="sub rv">Technologies I use and continue to develop my skills in.</p>
+ <div class="grid rv" id="skillGrid"></div>
+</div></section>
+
+<section id="projects"><div class="wrap">
+ <h2 class="rv">Featured Projects</h2><p class="sub rv">Practical solutions built through software engineering.</p>
+ <div id="projList" class="rv"></div>
+ <div class="card soon">More projects coming soon.</div>
+</div></section>
+
+<section id="education"><div class="wrap">
+ <h2 class="rv">Education</h2><p class="sub rv">My academic path in software engineering.</p>
+ <div class="tl rv" id="eduList"></div>
+</div></section>
+
+<section id="approach"><div class="wrap">
+ <h2 class="rv">How I Approach Development</h2><p class="sub rv">A simple process I follow from idea to working software.</p>
+ <div class="grid rv">
+  <div class="card step"><b>1</b><h3>Understand</h3><p>Analyze the problem, requirements, and intended users.</p></div>
+  <div class="card step"><b>2</b><h3>Design</h3><p>Plan the application structure, interface, database, and API interactions.</p></div>
+  <div class="card step"><b>3</b><h3>Build</h3><p>Develop the frontend, backend, and necessary integrations.</p></div>
+  <div class="card step"><b>4</b><h3>Test and Improve</h3><p>Validate functionality, investigate bugs, and refine the user experience.</p></div>
+ </div>
+ <p class="note rv">I follow an Agile/Scrum-oriented approach in my final-year project.</p>
+</div></section>
+
+<section id="strengths"><div class="wrap">
+ <h2 class="rv">Beyond Coding</h2><p class="sub rv">Strengths I bring alongside technical skills.</p>
+ <div class="grid rv">
+  <div class="card"><h3>Strategic Thinking</h3><p>Breaking complex requirements into manageable tasks and practical solutions.</p></div>
+  <div class="card"><h3>Data Analysis</h3><p>Organizing information and examining data to support better decisions.</p></div>
+  <div class="card"><h3>Market Research</h3><p>Exploring user needs, existing solutions, and technology options.</p></div>
+  <div class="card"><h3>Project Management</h3><p>Organizing development tasks, monitoring progress, and working toward project milestones.</p></div>
+ </div>
+</div></section>
+
+<section id="contact"><div class="wrap contact">
+ <div class="info rv">
+  <h2>Let's Build Something Useful</h2>
+  <p class="sub" style="margin-bottom:24px">I'm currently looking for Software Engineering Internship opportunities where I can contribute, learn, and develop my skills through real-world projects.</p>
+  <p><b>Email:</b> <a id="mailLink" href="#"></a></p>
+  <p><b>Phone:</b> <a id="phoneLink" href="tel:+94706949699">0706949699</a></p>
+  <p><b>Location:</b> Colombo, Sri Lanka</p>
+  <p><b>Languages:</b> English and Tamil</p>
+  <div class="cta"><a class="btn pri cv" href="Aron.pdf" download="Aron-Silva-CV.pdf">Download CV</a><a class="btn" id="li" href="#" hidden target="_blank" rel="noopener">LinkedIn</a><a class="btn" id="gh" href="#" hidden target="_blank" rel="noopener">GitHub</a></div>
+ </div>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+ <div class="fg">
+  <div><div class="logo">AS.</div><p>Aron Silva</p><p>Software Engineering Intern | Full-Stack Developer</p></div>
+  <div class="fl"><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#education">Education</a><a href="#contact">Contact</a></div>
+  <div><a id="mailFoot" href="#"></a><div class="fl" id="socialFoot" style="margin-top:6px"></div></div>
+ </div>
+ <p class="copy">Designed and developed with curiosity, creativity, and code.<br>© <span id="yr"></span> Aron Silva</p>
+</div></footer>
+
+<dialog id="dlg" aria-labelledby="dTitle"><button class="btn x" id="close" aria-label="Close details">✕</button><div id="dBody"></div></dialog>
+
+<script>
+/* ===== EDIT YOUR DETAILS HERE ===== */
+const CONFIG={email:"mraarondilan2003@gmail.com",cv:"Aron.pdf",cvName:"Aron-Silva-CV.pdf",linkedin:"",github:""}; // add real URLs to show the buttons
+const SKILLS=[
+ ["Programming Languages",["Java","Python","C#","PHP","JavaScript"]],
+ ["Frontend Development",["HTML5","CSS3","React.js"]],
+ ["Mobile Development",["React Native"]],
+ ["Backend Development",["Node.js","Express.js","Python","Django"]],
+ ["Databases",["MongoDB","MySQL"]],
+ ["Cloud and Security",["Firebase","AWS","JWT Authentication","AES Encryption"]],
+ ["Development Tools",["Git","Visual Studio Code","NetBeans"]]];
+const PROJECTS=[{
+ title:"Lost & Found Item Management System",category:"Final-Year Project | Web and Mobile Application",status:"In Development",
+ desc:"A web and mobile platform designed to help users register and manage personal belongings and improve the process of identifying and returning lost items. Users can create accounts, manage profiles, record belongings with photographs, and search for items using relevant categories or identifiers. The system also includes an ownership-verification workflow intended to help connect finders with the appropriate owners.",
+ tech:["React.js","React Native","Node.js","Express.js","MongoDB / MySQL","Firebase / AWS","JWT Authentication","AES Encryption"],
+ features:["User registration and authentication","User profile management","Personal item registration with photographs","Search and filtering by item type, category, or identifier","Ownership-verification workflow","Backend API integration","Database-backed item and user management","Security-focused handling of sensitive information"],
+ problem:"Lost items are hard to identify and return to their rightful owners without a reliable way to record belongings and verify ownership.",
+ objectives:["Let users register belongings in advance","Make lost items searchable","Help finders reach the right owner through verification"],
+ frontend:"React.js (web) and React Native (mobile).",backend:"Node.js and Express.js REST API.",
+ database:"MongoDB and/or MySQL, depending on the implemented configuration.",
+ security:"JWT authentication for user access and AES encryption for sensitive data.",
+ challenges:"",lessons:"", // add your own notes - empty sections stay hidden
+ github:"",demo:"" // add real URLs - empty buttons stay hidden
+}];
+const EDU=[
+ ["BSc (Top-up) Software Engineering","Kingston University","In Progress",""],
+ ["Higher National Diploma (HND) in Software Engineering","ESOFT Metro Campus, Colombo","Completed",""],
+ ["G.C.E. Advanced Level","St. Anne's M.M.V, Mannar","","Subjects: Geography, Christian Civilisation, Tamil, English."],
+ ["G.C.E. Ordinary Level","St. Anne's M.M.V, Mannar","",""]];
+/* ===== END EDIT ===== */
+
+const $=s=>document.querySelector(s),esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+$("#skillGrid").innerHTML=SKILLS.map(([c,l])=>`<div class="card"><h3>${c}</h3>${l.map(x=>`<span class="tag">${x}</span>`).join("")}</div>`).join("");
+$("#eduList").innerHTML=EDU.map(([q,i,s,n])=>`<div class="card ${s==="Completed"?"done":""}">${s?`<span class="st">${s}</span>`:""}<h3>${q}</h3><small>${i}</small>${n?`<p style="margin-top:6px">${n}</p>`:""}</div>`).join("");
+const art=`<svg viewBox="0 0 360 220" role="img" aria-label="Diagram: mobile and web apps connect to an API, which connects to the database"><g fill="none" stroke="#38BDF8" stroke-width="2"><rect x="20" y="20" width="100" height="56" rx="10"/><rect x="20" y="144" width="100" height="56" rx="10"/><rect x="140" y="82" width="90" height="56" rx="10" stroke="#6366F1"/><rect x="250" y="82" width="90" height="56" rx="10"/><path d="M120 48 140 100M120 172 140 120M230 110h20"/></g><g fill="#F8FAFC" font-family="Inter" font-size="12" text-anchor="middle"><text x="70" y="53">Web App</text><text x="70" y="177">Mobile App</text><text x="185" y="115">API</text><text x="295" y="115">Database</text></g></svg>`;
+$("#projList").innerHTML=PROJECTS.map((p,i)=>`<article class="card proj"><div class="body"><div class="cat">${p.category}</div><span class="status">${p.status}</span><h3>${esc(p.title)}</h3><p style="color:var(--m);margin-bottom:16px">${esc(p.desc.split(". ")[0])}.</p><div>${p.tech.map(t=>`<span class="tag">${t}</span>`).join("")}</div><div class="cta"><button class="btn pri" data-i="${i}">View Details</button>${p.github?`<a class="btn" href="${p.github}" target="_blank" rel="noopener">View Source Code</a>`:""}${p.demo?`<a class="btn" href="${p.demo}" target="_blank" rel="noopener">Live Demo</a>`:""}</div></div><div class="art">${art}</div></article>`).join("");
+const dlg=$("#dlg");
+document.addEventListener("click",e=>{const b=e.target.closest("[data-i]");if(!b)return;const p=PROJECTS[b.dataset.i];
+ const sec=(h,c)=>c?`<h4>${h}</h4>${Array.isArray(c)?`<ul>${c.map(x=>`<li>${esc(x)}</li>`).join("")}</ul>`:`<p>${esc(c)}</p>`}`:"";
+ $("#dBody").innerHTML=`<h3 id="dTitle" style="font-size:1.6rem">${esc(p.title)}</h3><p>${p.category} · ${p.status}</p>`+sec("Overview",p.desc)+sec("Problem statement",p.problem)+sec("Objectives",p.objectives)+sec("Main features",p.features)+`<h4>System architecture</h4>${art.replace("<svg","<svg style='max-width:380px;background:#0B1020;border-radius:12px;padding:8px'")}`+sec("Frontend technologies",p.frontend)+sec("Backend technologies",p.backend)+sec("Database design",p.database)+sec("Security considerations",p.security)+sec("Development challenges",p.challenges)+sec("Lessons learned",p.lessons)+sec("Current status",p.status+" — features are listed as planned until implemented and tested.");
+ dlg.showModal()});
+$("#close").onclick=()=>dlg.close();dlg.addEventListener("click",e=>{if(e.target===dlg)dlg.close()});
+/* contact links */
+const mail="mailto:"+CONFIG.email;["#mailLink","#mailFoot"].forEach(s=>{$(s).href=mail;$(s).textContent=CONFIG.email});
+[["li","linkedin","LinkedIn"],["gh","github","GitHub"]].forEach(([id,k,n])=>{if(CONFIG[k]){const a=$("#"+id);a.href=CONFIG[k];a.hidden=false;$("#socialFoot").insertAdjacentHTML("beforeend",`<a href="${CONFIG[k]}" target="_blank" rel="noopener">${n}</a>`)}});
+$("#yr").textContent=new Date().getFullYear();
+/* CV download: fetches the file, then saves it. Shows a clear message if the file is missing. */
+document.querySelectorAll("a.cv").forEach(a=>{a.href=CONFIG.cv;a.addEventListener("click",async e=>{
+ e.preventDefault();
+ try{const r=await fetch(CONFIG.cv,{cache:"no-cache"});
+  if(!r.ok||(r.headers.get("content-type")||"").includes("text/html"))throw new Error("missing");
+  const u=URL.createObjectURL(await r.blob()),d=document.createElement("a");
+  d.href=u;d.download=CONFIG.cvName;document.body.appendChild(d);d.click();d.remove();setTimeout(()=>URL.revokeObjectURL(u),1500);
+ }catch(_){alert("CV file not found. Upload \""+CONFIG.cv+"\" to the same folder as index.html (the name is case-sensitive).")}
+})});
+/* nav */
+const menu=$("#menu"),links=$("#links");
+menu.onclick=()=>{const o=links.classList.toggle("open");menu.setAttribute("aria-expanded",o)};
+links.addEventListener("click",e=>{if(e.target.closest("a")){links.classList.remove("open");menu.setAttribute("aria-expanded",false)}});
+const ls=[...document.querySelectorAll("a.l")];
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)ls.forEach(a=>a.classList.toggle("on",a.getAttribute("href")==="#"+e.target.id))}),{rootMargin:"-45% 0px -50% 0px"});
+document.querySelectorAll("section[id]").forEach(s=>io.observe(s));
+const ro=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("show");ro.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll(".rv").forEach(el=>ro.observe(el));
+</script>
+</body>
+</html>
